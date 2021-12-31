@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  background: #ecf0f3;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playground {
+  position: relative;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ced1cf;
+  border-radius: 10px;
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-around;
+}
+.player {
+  width: 70%;
+  font-size: 2rem;
+  position: absolute;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  border-radius: 5px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.player p,
+.player input {
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.player p span {
+  color: rgb(130, 0, 50);
+}
+.player input {
+  border-radius: 100px;
+  outline: none;
+  padding: 5px 10px;
+}
+.player button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* total score */
+.total-score {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5%;
+}
+#name-0 span,
+#name-1 span {
+  color: lightseagreen;
+}
+.total-score p {
+  text-align: center;
+}
+.total-score p:nth-child(2) {
+  font-size: 2.5rem;
+  color: rgba(255, 0, 255, 0.5);
+}
+.active {
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 10px;
+  background: rgba(0, 247, 255, 0.05);
+}
+.current-score {
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 220px;
+}
+.buttons img {
+  margin-bottom: 8rem;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 5px;
+  width: 80%;
+}
+.buttons button {
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  border-radius: 5px;
+  border: none;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 500;
+  width: 100%;
+}
+.buttons button:hover,
+.buttons button:active {
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.buttons p {
+  text-align: justify;
+  font-size: 1.8rem;
+}
+.modal {
+  position: absolute;
+  width: 95%;
+  height: 50%;
+  border-radius: 10px;
+
+  left: 50%;
+  top: 27%;
+  transform: translate(-50%, -50%);
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.text-in-modal {
+  font-size: 5rem;
+  color: darkseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

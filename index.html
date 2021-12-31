@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hod kockou</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="playground">
+        <article class="player name-player-2">
+          <p>Zadaj meno <span>druhého</span> hráča</p>
+          <input type="text" placeholder="Meno hráča" name="player2" />
+          <button disabled>OK</button>
+        </article>
+
+        <article class="player name-player-1">
+          <p>Zadaj meno <span>prvého</span> hráča</p>
+          <input type="text" placeholder="Meno hráča" name="player1" />
+          <button disabled>OK</button>
+        </article>
+
+        <article class="name-player-1"></article>
+        <article class="total-score total-score-0">
+          <p id="name-0" class="active">Skóre <span>1.hráča</span></p>
+          <p id="total-score-player0">30</p>
+          <div class="current-score current-score-0">
+            <p>Súčasné skóre</p>
+            <p id="currentScore-0">3</p>
+          </div>
+        </article>
+
+        <article class="buttons">
+          <img src="img/5.png" alt="dice" class="dice-image" />
+          <button class="throw-dice">Hodiť kockou</button>
+          <button class="hold-score">Podržať skóre</button>
+          <button class="new-game">Nová hra</button>
+          <h1>Návod na hru</h1>
+          <p>
+            Začína hráč č.1. Po hode kockou sa hráčovi pripočítavajú hodnoty na
+            kocke. Ak hráč hodí 1 hodnota súčasného skóre sa vynuluje a na ťahu
+            je druhý hráč. Ak si chce hráč uložiť hodnotu, podrží skóre a
+            hodnota sa mu uloží do súčasného skóre a nasleduje druhý hráč. Hra
+            končí keď ktorýkoľvek hráč dosiahne skóre 21 a viac(musí byť uložené).
+          </p>
+        </article>
+
+        <article class="total-score total-score-1">
+          <p id="name-1">Skóre <span> 2.hráča </span></p>
+          <p id="total-score-player1">40</p>
+          <div class="current-score current-score-1">
+            <p>Súčasné skóre</p>
+            <p id="currentScore-1">8</p>
+          </div>
+        </article>
+
+        <div class="modal"></div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
